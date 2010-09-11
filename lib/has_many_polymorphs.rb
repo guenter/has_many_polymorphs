@@ -18,9 +18,5 @@ if ENV['HMP_DEBUG'] || ENV['RAILS_ENV'] =~ /development|test/ && ENV['USER'] == 
   require 'has_many_polymorphs/debugging_tools' 
 end
 
-if defined? Rails and Rails.env and Rails.root
-  _logger_warn "rails environment detected"
-  require 'has_many_polymorphs/autoload'
-end
 
 _logger_debug "loaded ok"
